@@ -85,7 +85,6 @@ app.post('/editbook/:id',(req ,res)=>{
     var price = entities.encode(req.body.price);
     var qty = entities.encode(req.body.qty);
     var state = entities.encode(req.body.state);
-    //for creating date
     var on = makeid(7);
     Book.updateBook(id , {
         name:name,price:price,qty:qty,state:state,isbn:on
