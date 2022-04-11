@@ -31,7 +31,7 @@ function sanitizer(string){
     return string;
 }
 //getting to the index
-app.get('/index',(req ,res)=>{
+app.get('/',(req ,res)=>{
     res.render('index');
 });
 //getting addbook page
